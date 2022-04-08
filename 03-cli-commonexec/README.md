@@ -1,10 +1,9 @@
 ~~~
 terraform init 
 
-cat .terraform.lock.hcl 
 terraform plan 
 terraform apply 
-
+cat .terraform.lock.hcl
 
 terraform plan 
 terraform plan -out build-plan 
@@ -18,8 +17,6 @@ terraform show
 terraform refresh 
 terraform show 
 terraform apply 
-terraform apply destroy-plan 
-terraform plan -destroy -out destroy-plan 
 terraform apply destroy-plan 
 
 
