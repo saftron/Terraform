@@ -4,7 +4,7 @@
 02-first-aws-deployment
 03-cli-commonexec
 04-resources
-05-resources
+05-providers
 06-variables
 07-outputs
 08-graphviz
