@@ -1,3 +1,4 @@
+~~~
 00-setup
 01-setup-aws
 02-first-aws-deployment
@@ -28,3 +29,4 @@
 27-exercise-Frontend-Backend
 28-kubernetes-setup-GCP
 29-EKS-setup
+~~~
