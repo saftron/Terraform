@@ -56,7 +56,7 @@ resource "aws_instance" "east_backend" {
 
 resource "aws_instance" "west_backend" {
   ami           = "ami-00be885d550dcee43"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
   availability_zone = var.zones_west[count.index]
   count             = 2
   provider      = aws.us-west-2
