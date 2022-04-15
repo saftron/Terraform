@@ -9,29 +9,6 @@ resource "aws_instance" "frontend" {
     Name = local.default_name
   }
 
-/*
-connection { 
-  type = "ssh"
-  user = "ubuntu"
-  private_key = file(var.pvt_key)
-  host        = self.public_ip
-}
-
-
-provisioner "file" { 
-  source = "./frontend"
-  destination = "/home/ec2-user/frontend"
-}
-
-
-provisioner "remote-exec" { 
-   inline = [ 
-     "sudo chmod +x ~/frontend/run_frontend.sh",
-     "sudo sh  ~/frontend/run_frontend.sh",
-   ]
-
-}
-*/
 
 }
 
