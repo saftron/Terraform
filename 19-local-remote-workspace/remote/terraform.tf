@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "testgaj"
-    key    = "testgaj/terraform.tfstate"
+    bucket = "test-gaj"
+    key    = "test-gaj/terraform.tfstate"
     region = "us-east-2"
   }
 }
