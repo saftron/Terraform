@@ -28,16 +28,6 @@ resource "aws_security_group" "demo-sg" {
    }
   }
 
-  dynamic "egress" { 
-   for_each = var.sg_ports
-   content { 
-    from_port = egress.value
-    to_port   = egress.value
-    protocol  = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-   }
-  }
-
 
 tags = {
   Name  = "demo-tf-sg"

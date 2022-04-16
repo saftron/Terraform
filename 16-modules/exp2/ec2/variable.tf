@@ -36,7 +36,9 @@ variable "ec2_count" {
 variable "region" { 
   default = "us-east-1"
 }
-
+variable "amione" {
+   default = "123"
+}
 
 variable "ami" { 
   type = map

@@ -1,8 +1,13 @@
 provider "aws" {
-  version = "3.20"
-  region  = "us-east-2"
+  version = "4.10.0"
+  region  = var.region
 }
 
+variable "region" {
+   default = "us-west-1"
+
+
+}
 
 data "aws_ami" "myami" { 
   most_recent = true 
@@ -15,7 +20,15 @@ data "aws_ami" "myami" {
 
 }
 
+data "aws_regions" "current" {
+  all_regions = true
+  filter {
+    name = "endpoint"
+    values = ["*us-west-*"]
 
+
+    }
+}
 
 
 resource "aws_instance" "east_frontend" {
@@ -30,4 +43,8 @@ resource "aws_instance" "east_frontend" {
 
 output "ami_details" { 
  value = data.aws_ami.myami
+}
+
+output "current" {
+  value = data.aws_regions.current
 }
