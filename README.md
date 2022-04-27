@@ -27,6 +27,6 @@
 25-IAM 
 26-Route53
 27-exercise-Frontend-Backend
-28-kubernetes-setup-GCP
-29-EKS-setup
+28-AWS-EKS
+29-GCP-Kubernetes-setup
 ~~~
