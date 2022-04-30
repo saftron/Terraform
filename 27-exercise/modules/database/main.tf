@@ -12,7 +12,7 @@ resource "aws_db_instance" "database" {
   identifier             = "${var.namespace}-db-instance"
   name                   = "pets"
   username               = "admin"
-  password               = random_password.password.result
+  password               = "admintest"
   db_subnet_group_name   = var.vpc.database_subnet_group #B
   vpc_security_group_ids = [var.sg.db] #B
   skip_final_snapshot    = true
